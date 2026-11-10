@@ -17,7 +17,7 @@ def load_my_model():
 try:
     model = load_my_model()
     st.success("Model loaded successfully!")
-typeof_error as e:
+except Exception as e:
     st.error(f"Error loading model. Please ensure 'covid19_model.keras' is in the same directory: {e}")
 
 st.title("🩺 Chest X-Ray COVID-19 Classifier")
